@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim-Mang</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+<body>
+   <!-- Start NavBar Section -->
+      <nav class="navbar navbar-expand-lg bg-dark sticky-lg-top sticky-md-top">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="logo.jpg" style="width:45px;height:auto;" class="rounded-circle"></a>
+          <p class="text-light"><marquee>God Bless You All!</marquee></p>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link px-3" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu bg-dark">
+                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                    <li><a class="dropdown-item" href="testimony.html">Testimony</a></li>
+                    <li><a class="dropdown-item" href="story.html">Story</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="music.html">Music</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+   <!-- End NavBar Section -->
+
+   <!-- Gallery Start Header-->
+   <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="body">
+            <div class="content">
+              <span style="--i:1;"><img src="slide_images/gallery/g1.jpg" alt="Img"></span>
+              <span style="--i:2;"><img src="slide_images/gallery/g2.jpeg" alt="Img"></span>
+              <span style="--i:3;"><img src="slide_images/gallery/g3.jpeg" alt="Img"></span>
+              <span style="--i:4;"><img src="slide_images/gallery/g4.jpeg" alt="Img"></span>
+              <span style="--i:5;"><img src="slide_images/gallery/g5.jpeg" alt="Img"></span>
+              <span style="--i:6;"><img src="slide_images/gallery/g6.jpeg" alt="Img"></span>
+              <span style="--i:7;"><img src="slide_images/gallery/g7.jpeg" alt="Img"></span>
+              <span style="--i:8;"><img src="slide_images/gallery/g8.jpeg" alt="Img"></span>
+              <span style="--i:9;"><img src="slide_images/gallery/g9.jpeg" alt="Img"></span>
+            </div>
+          </div>
+        </div>
+   </div>
+   <!-- Gallery End -->
+
+   <!-- Card Body -->
+   <div class="container">
+      <div class="row">
+        <div class="col-md-3 my-2">
+          <div class="card border border-light">
+            <div class="card-body border border-success p-0">
+              <img src="slide_images/gallery/card1.jpg" alt="img">
+            </div>
+            <div class="card-footer text-center py-3">
+              <div class="text-primary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <div class="icons">
+                <span class="like" id="likeCount">0</span>
+                <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="A()"></i>
+                <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="a()"></i>
+                <span class="dislike" id="dislikeCount">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="card border border-light">
+            <div class="card-body border border-success p-0">
+              <img src="slide_images/gallery/card2.jpeg" alt="img">
+            </div>
+            <div class="card-footer text-center py-3">
+              <div class="text-primary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <div class="icons">
+                <span class="like" id="dimCount">0</span>
+                <i class="fa-solid fa-heart fs-5 text-danger" id="dimBtn" onclick="B()"></i>
+                <i class="fa-regular fa-thumbs-down fs-5" id="disBtn" onclick="b()"></i>
+                <span class="dislike" id="disCount">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="card border border-light">
+            <div class="card-body border border-success p-0">
+              <img src="slide_images/gallery/card3.jpg" alt="img">
+            </div>
+            <div class="card-footer text-center py-3">
+              <div class="text-primary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <div class="icons">
+                <span class="like" id="KCount">0</span>
+                <i class="fa-solid fa-heart fs-5 text-danger" id="KBtn" onclick="C()"></i>
+                <i class="fa-regular fa-thumbs-down fs-5" id="diskBtn" onclick="c()"></i>
+                <span class="dislike" id="diskCount">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="card border border-light">
+            <div class="card-body border border-success p-0">
+              <img src="slide_images/gallery/card4.jpg" alt="img">
+            </div>
+            <div class="card-footer text-center py-3">
+              <div class="text-primary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <div class="icons">
+                <span class="like" id="TCount">0</span>
+                <i class="fa-solid fa-heart fs-5 text-danger" id="TBtn" onclick="D()"></i>
+                <i class="fa-regular fa-thumbs-down fs-5" id="distBtn" onclick="d()"></i>
+                <span class="dislike" id="distCount">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="card border border-light">
+            <div class="card-body border border-success p-0">
+              <img src="slide_images/gallery/card5.jpg" alt="img">
+            </div>
+            <div class="card-footer text-center py-3">
+              <div class="text-primary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <div class="icons">
+                <span class="like" id="likeCount">0</span>
+                <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="E()"></i>
+                <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="e()"></i>
+                <span class="dislike" id="dislikeCount">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="card border border-light">
+            <div class="card-body border border-success p-0">
+              <img src="slide_images/gallery/card6.jpg" alt="img">
+            </div>
+            <div class="card-footer text-center py-3">
+              <div class="text-primary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <div class="icons">
+                <span class="like" id="likeCount">0</span>
+                <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="F()"></i>
+                <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="f()"></i>
+                <span class="dislike" id="dislikeCount">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="card border border-light">
+            <div class="card-body border border-success p-0">
+              <img src="slide_images/gallery/card7.jpg" alt="img">
+            </div>
+            <div class="card-footer text-center py-3">
+              <div class="text-primary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <div class="icons">
+                <span class="like" id="likeCount">0</span>
+                <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="G()"></i>
+                <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="g()"></i>
+                <span class="dislike" id="dislikeCount">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="card border border-light">
+            <div class="card-body border border-success p-0">
+              <img src="slide_images/gallery/card8.jpg" alt="img">
+            </div>
+            <div class="card-footer text-center py-3">
+              <div class="text-primary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+              <div class="icons">
+                <span class="like" id="likeCount">0</span>
+                <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="H()"></i>
+                <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="h()"></i>
+                <span class="dislike" id="dislikeCount">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- See More Button -->
+        <button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#more" aria-expanded="false" aria-controls="collapseExample"><b>See More</b></button>
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card9.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="I()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="i()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card10.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="J()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="j()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card11.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="K()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="k()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card12.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="L()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="l()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card13.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="M()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="m()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card14.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="N()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="n()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card15.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="O()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="o()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card16.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="P()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="p()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card17.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="Q()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="q()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card18.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="R()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="r()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card19.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="S()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="s()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="more">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card20.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="T()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="t()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- See More Button -->
+        <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#show" aria-expanded="false" aria-controls="collapseExample"><b>See More</b></button>
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card21.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="U()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="u()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card22.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="V()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="v()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card23.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="W()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="w()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card24.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="X()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="x()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card25.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="Y()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="y()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card26.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="Z()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="z()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card27.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="AA()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="aa()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card28.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="BB()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="bb()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card29.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="CC()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="cc()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card30.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="DD()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="dd()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card31.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="EE()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="ee()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card32.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="FF()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="ff()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card33.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="GG()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="gg()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card34.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="HH()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="hh()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card35.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="II()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="ii()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-2">
+          <div class="collapse" id="show">
+            <div class="card border border-light">
+              <div class="card-body border border-success p-0">
+                <img src="slide_images/gallery/card36.jpg" alt="img">
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="text-primary">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div class="icons">
+                  <span class="like" id="likeCount">0</span>
+                  <i class="fa-solid fa-heart fs-5 text-danger" id="likeBtn" onclick="JJ()"></i>
+                  <i class="fa-regular fa-thumbs-down fs-5" id="dislikeBtn" onclick="jj()"></i>
+                  <span class="dislike" id="dislikeCount">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+   </div>
+   <!-- End Card -->
+
+   <!-- Start Footer Section -->
+      <div class="section-footer">
+        <div class="row">
+          <div class="col-md-5 text-center">
+            <div data-aos="zoom-in-down" data-aos-duration="1000">
+              <br/>
+              <img src="slide_images/footer/1.jpg" class="img-thumbnail rounded" alt="Img" style="width: 120px;height:auto;">
+              <img src="slide_images/footer/2.jpg" class="img-thumbnail rounded" alt="Img" style="width: 120px;height:auto;">
+              <img src="slide_images/footer/3.jpg" class="img-thumbnail rounded" alt="Img" style="width: 120px;height:auto;">
+              <img src="slide_images/footer/4.jpg" class="img-thumbnail rounded" alt="Img" style="width: 120px;height:auto;">
+            </div>
+          </div>
+          <div class="col-md-1 text-center" data-aos="zoom-in-down" data-aos-duration="1000">
+            <br/>
+              <i class="fa fa-home" aria-hidden="true"></i><a href=""><span>  Home</span></a><br/>
+              <i class="fa fa-address-book" aria-hidden="true"></i><a href=""><span>  About</span></a><br/>
+              <i class="fa fa-image" aria-hidden="true"></i><a href=""><span>  Gallery</span></a><br/>
+              <i class="fa fa-music" aria-hidden="true"></i><a href=""><span>  Music</span></a>
+          </div>
+          <div class="col-md-2 text-center" data-aos="zoom-in-down" data-aos-duration="1000">
+            <br/>
+            <h5><b>Contact Us</b></h5>
+            <p>No.927, <br/>Kyansarthinkyaung Street, <br/>East Gyogone, Insein.Tsp</p>
+          </div>
+          <div class="col-md-4 text-center" data-aos="zoom-in-down" data-aos-duration="1000">
+            <br/>
+            <a href="https://www.facebook.com/kimmang.dd"><i class="fa-brands fa-facebook fs-1 p-0 m-1" style="color: #1877F2;"></i></a>
+            <a href="https://telegram.org/"><i class="fa-brands fa-telegram fs-1 p-0 m-1" style="color: #0088cc;"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fs-1 p-0 m-1" style="color:#075e54;"></i></a>
+            <a href="https://join.skype.com/invite/wAECYV7ZYVvM"><i class="fa-brands fa-skype fs-1 p-0 m-1" style="color: #00aff0;"></i></a>  
+            <div class="text-success m-2 p-2">
+              <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+              <a href="tel:+959 969 201 720">
+              +959 969-201-720
+              </a>
+            </div>
+          </div>
+        </div>
+        <br/><br/>
+        <div class="container p-3">
+          <p class="text-center">Copyright © 2023 kimmang. All rights reserved.</p>
+        </div>
+      </div>
+   <!-- End Footer Section -->
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
